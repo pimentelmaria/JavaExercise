@@ -11,7 +11,6 @@ public class Company extends Customer {
         this.nipc = nipc;
     }
 
-    // Override the method to return the tax number (NIPC)
     @Override
     public String getIdentificationNumber()  {
         return nipc;

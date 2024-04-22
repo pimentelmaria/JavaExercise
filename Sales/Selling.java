@@ -13,9 +13,7 @@ public class Selling extends Sale {
     public void recordSelling() {
         if (!customer.alreadyRecordedSelling()) {
             customer.addSelling(this);
-            // Set alreadyRecordedSelling to true to prevent recursive recording
             customer.setAlreadyRecordedSelling(true);
-            // Create a corresponding purchase item
             Purchase correspondingPurchase = new Purchase(
                 getProductId(),
                 getUnitPriceWithoutTax(),
@@ -24,9 +22,7 @@ public class Selling extends Sale {
                 getCustomer(),
                 getCompany()
             );
-            // Add the corresponding purchase item to the list of purchases
             customer.addPurchase(correspondingPurchase);
-            // Reset alreadyRecordedSelling flag
             customer.setAlreadyRecordedSelling(false);
         }
     }

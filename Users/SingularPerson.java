@@ -10,7 +10,6 @@ public class SingularPerson extends Customer {
         this.nif = nif;
     }
 
-    // Override the method to return the tax number (NIF)
     @Override
     public String getIdentificationNumber() {
         return nif;

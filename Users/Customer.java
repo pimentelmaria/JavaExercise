@@ -14,18 +14,15 @@ public abstract class Customer {
     private boolean alreadyRecordedPurchase = false;
     private boolean alreadyRecordedSelling = false;
 
-    // Constructor
     public Customer(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
-    // Getter for name (read-only)
     public String getName() {
         return name;
     }
 
-    // Getter and setter for email
     public String getEmail() {
         return email;
     }
@@ -34,16 +31,12 @@ public abstract class Customer {
         this.email = email;
     }
 
-    // Abstract method to get identification number
     public abstract String getIdentificationNumber();
 
-   
-    // Getter for the list of purchases
     public List<Purchase> getPurchasesList() {
         return purchases;
     }
 
-    // Getter for the list of sellings
     public List<Selling> getSellingsList() {
         return sellings;
     }

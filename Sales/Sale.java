@@ -1,6 +1,5 @@
 package Sales;
 
-// Import the Customer class
 import Users.Customer;
 import Users.SingularPerson;
 import Users.Company;
@@ -31,7 +30,7 @@ public abstract class Sale {
         this.customer = customer;
         this.buyer = buyer;
     }
-    // Getters for attributes
+
     public String getProductId() {
         return productId;
     }
