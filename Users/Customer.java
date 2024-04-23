@@ -36,7 +36,7 @@ public abstract class Customer {
     public List<Purchase> getPurchasesList() {
         return purchases;
     }
-
+git 
     public List<Selling> getSellingsList() {
         return sellings;
     }
